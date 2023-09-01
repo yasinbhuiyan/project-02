@@ -378,6 +378,9 @@ p{
   text-align: center;
   font-size: .8rem;
 }
+.footer__p{
+  font-size: .8rem;
+}
 .footer__p span{
   color: #6A77FF;
   text-transform: uppercase;
