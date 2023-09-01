@@ -13,6 +13,10 @@
 
 
 /* header section start here */
+.header{
+  display: flex;
+  align-items: center;
+}
 .header__logo{
   text-align: right;
   margin: 0;
@@ -20,7 +24,7 @@
   margin-top: -6px;
 }
 .header__title{
-  margin-top: 10px;
+  text-align: left;
 }
 .header__nav{
   flex-direction: row;
@@ -32,7 +36,6 @@
   border-radius: 0px;
   padding: 10px;
   margin: 0;
-  margin-top: 10px;
 }
 /* header section end here */
 
@@ -97,6 +100,10 @@
 
 
 /* footer section start here */
+.footer{
+  display: flex;
+  align-items: center;
+}
 .footer__a{
   display: inline;
 }

@@ -15,22 +15,18 @@ a{
   font-size: 1rem;
   font-weight: bold;
   color: #fff;
-  
 }
 h2{
   text-align: center;
-  
 }
 p{
   font-size: 1rem;
 }
-
 .dotted--hr{
   border: 6px dotted #FFFFFF;
   border-bottom: none;
   width: 80px;
   margin: 20px auto;
-  
 }
 .rounded--icon{
   border: 5px solid #FFFFFF;
@@ -40,7 +36,6 @@ p{
   height: 100px;
   width: 100px;
   font-size: 60px;
-
 }
 [class*="col-"]{
   float: left;
@@ -51,7 +46,11 @@ p{
 [class*="col-"]{
   width: 100%;
 }
-
+.clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
+}
 
 /* Header section start here */
 .header{
@@ -83,14 +82,7 @@ p{
 .nav__a:hover{
   background: #808080;
 }
-.header::after{
-  content: ''; 
-  clear: both;
-  display: table;
-}
 /* Header section end here */
-
-
 
 /* profile section start here */
 .profile{
@@ -112,14 +104,14 @@ p{
 }
 .profile__title{
   text-align: center;
-font-family: 'Satisfy', cursive;}
+  font-family: 'Satisfy', cursive;
+}
 .profile__p{
   text-align: justify;
   color: #808080;
   width: 90%;
   margin: 0 auto 20px auto;
   text-align: center;
-
 }
 .bottom--weather{
   width: 80px;
@@ -134,10 +126,9 @@ font-family: 'Satisfy', cursive;}
 }
 /* profile section end here */
 
-
 /* about me section start here */
 .about{
-  padding: 1% 7%;
+  padding: 5% 7%;
   color: #FFFFFF;
   text-align: center;
   background: #1E90FF;
@@ -159,17 +150,9 @@ font-family: 'Satisfy', cursive;}
   cursor: pointer;
   margin: 10px;
   text-align: center;
+}
 
-  
-}
-.about::after{
-  content: '';
-  clear: both;
-  display: table; 
-}
 /* about me section end here */
-
-
 
 /* professional-experience section start here*/
 .experience{
@@ -178,7 +161,7 @@ font-family: 'Satisfy', cursive;}
 .card{
   background: #DFDFDF;
   border-radius: 5px;
-  padding: 5px;
+  padding: 30px 0;
   transition: 0.3s;
 }
 .card:hover{
@@ -201,6 +184,9 @@ font-family: 'Satisfy', cursive;}
   color: black;
 }
 
+.skill__ul{
+  padding: 0 10px; 
+}
 .skill__li{
   list-style: none;
   font-weight: bolder;
@@ -334,23 +320,14 @@ font-family: 'Satisfy', cursive;}
     width: 70%;
   }
 }
-.experience::after{
-  content: '';
-  display: table;
-  clear: both;
-}
 /* professional-experience section end here*/
-
-
 
 /* achievements section start here */
 .contract{
   background: #1E90FF;
   color: #FFFFFF;
   padding: 1% 5%;
-  
 }
-
 .contract__massage{
   text-align: center;
 }
@@ -363,7 +340,6 @@ font-family: 'Satisfy', cursive;}
   font-size: 1rem;
   resize: none;
 }
-
 .massage__btn{
   border: none;
   color: #FFFFFF;
@@ -374,7 +350,6 @@ font-family: 'Satisfy', cursive;}
   width: 100px;
   margin: 10px;
   cursor: pointer;
-  
 }
 .social__link{
   text-align: center;
@@ -388,20 +363,12 @@ font-family: 'Satisfy', cursive;}
   padding-top: 4px;
   cursor: pointer;
   background: #FFFFFF;
-  margin: 4px;
-  
+  margin: 4px
 }
 .social__btn:hover{
   background: #ddd;
 }
-
-.contract::after{
-  content: '';
-  display: table;
-  clear: both;
-}
 /* achievements section end here */
-
 
 /* footer section start here */
 .footer{
@@ -409,31 +376,20 @@ font-family: 'Satisfy', cursive;}
   color: #FFFFFF;
   padding: 20px;
   text-align: center;
-  font-size: 1rem;
+  font-size: .8rem;
+}
+.footer__p span{
+  color: #6A77FF;
+  text-transform: uppercase;
 }
 .footer__a{
   color: #FFFFFF;
   display: block;
-  padding: 5px;
-  margin: 5px;
+  padding: 10px 15px;
   text-transform: uppercase;
-  font-size: 1rem;
   cursor: pointer;
 }
 .footer__a:hover{
   color: #ccc;
-}
-.footer__p{
-  font-weight: bold;
-  display: inline;
-}
-.footer__copy{
-  font-size: 1.3rem;
-  font-weight: normal;
-}
-.footer::after{
-  content: '';
-  display: table;
-  clear: both;
 }
 /* footer section end here */
